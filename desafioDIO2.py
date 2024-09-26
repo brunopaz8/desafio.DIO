@@ -22,8 +22,12 @@ def fun_saque(saldo,total_de_saques,extrato_saque):
                 print('Saque invalido, valor limite atingido !')
             elif saque > saldo:
                 print('Saque invalido, saldo insuficiente !')
+            else:
+                print('Erro!')
     else :
-        print("Limite de saques atingido !")    
+        print("Limite de saques atingido !") 
+    return saldo, extrato_saque, total_de_saques   
+    
 def fun_extrato(extrato_deposito,extrato_saque,saldo):
        print("\n-----Extrato-----")
        print("Depositos realizados:")
@@ -120,6 +124,16 @@ def login(banco_de_dados):
             print('Opção inválida!')
 banco_de_dados = {}
 login(banco_de_dados= banco_de_dados )
+
+
+
+  
+
+        
+
+          
+
+
 
 
 
