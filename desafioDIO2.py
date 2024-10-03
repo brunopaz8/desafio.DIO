@@ -12,7 +12,7 @@ def fun_saque(saldo,total_de_saques,extrato_saque):
 
     if total_de_saques > 0:
             saque = float(input("Insira o valor do saque: \n"))
-            if saque < 501 and saque < saldo :
+            if saque < 501 and saque <= saldo :
                 extrato_saque.append(saque)
                 total_de_saques -= 1
                 saldo -= saque
@@ -22,8 +22,6 @@ def fun_saque(saldo,total_de_saques,extrato_saque):
                 print('Saque invalido, valor limite atingido !')
             elif saque > saldo:
                 print('Saque invalido, saldo insuficiente !')
-            else:
-                print('Erro!')
     else :
         print("Limite de saques atingido !") 
     return saldo, extrato_saque, total_de_saques   
@@ -125,6 +123,23 @@ def login(banco_de_dados):
 banco_de_dados = {}
 login(banco_de_dados= banco_de_dados )
 
+
+
+  
+
+        
+
+          
+
+
+
+
+
+  
+
+        
+
+          
 
 
   
